@@ -178,7 +178,9 @@ http://localhost:8080/students
 ---
 ## 📬 Contact
 Author: **Shruti Narad**
+
 LinkedIn: **linkedin.com/in/shrutinarad16**
+
 Email: **shrutinarad06@gmail.com**
 
 _"Clean code is not just writing less, it's about writing right." _
