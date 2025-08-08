@@ -101,25 +101,27 @@ src/main/java/com/example/studentapi
   "percentage": 92.5,
   "branch": "Computer Science"
 }
-
+```
 
 ### ✅ Update Student (PUT /student/{id})
-
+```json
 {
   "rollNo": 101,
   "name": "Shruti Updated",
   "percentage": 95.0,
   "branch": "AI & ML"
 }
-
+```
 ### ✅ Example of Invalid JSON (for testing validations)
 
+```json
 {
   "rollNo": -1,
   "name": "",
   "percentage": 200,
   "branch": ""
 }
+```
 
 ##🔐 Authentication
 Spring Security is enabled with Basic Authentication.
