@@ -122,16 +122,17 @@ src/main/java/com/example/studentapi
   "branch": ""
 }
 ```
+---
 
-##🔐 Authentication
+## 🔐 Authentication
 Spring Security is enabled with Basic Authentication.
 
 Default credentials (can be changed in application.properties):
-
+```sql
 Username: admin
 
 Password: admin123
-
+```
 Use Postman Authorization → Basic Auth to provide credentials.
 
 ## 📜 Logging (Log4j2)
@@ -142,3 +143,45 @@ Example log entry:
 2025-08-08 14:35:27 INFO  StudentController - Fetching student with ID: 101
 ```
 
+## ⚠ Exception Handling
+Custom Exception:
+**StudentNotFoundException** → thrown when student ID does not exist.
+**Global Exception Handler:**
+Handles all runtime exceptions and returns consistent JSON error responses.
+```json
+{
+  "timestamp": "2025-08-08T14:36:55",
+  "status": 404,
+  "error": "Not Found",
+  "message": "Student with ID 999 not found",
+  "path": "/student/999"
+}
+```
+
+## 🧑‍💻 Run the Project
+1. Clone the repository:
+```bash
+git clone https://github.com/shrutinarad16/student-api.git
+```
+2. Navigate to project directory:
+```
+cd student-api
+```
+3. Build and run:
+```
+mvn spring-boot:run
+```
+4. Access API in Postman:
+```
+http://localhost:8080/students
+```
+---
+## 📬 Contact
+Author: **Shruti Narad**
+LinkedIn: **linkedin.com/in/shrutinarad16**
+Email: **shrutinarad06@gmail.com**
+
+_"Clean code is not just writing less, it's about writing right." _
+
+
+---
